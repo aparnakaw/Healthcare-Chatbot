@@ -1,0 +1,59 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "deepression",
+         "patterns": ["What are some symptoms of depression", "What is depression"],
+         "responses": ["Here are some symptoms of depression: Hopeless outlook, Lost interest, Increased fatigue, Suicidal thoughts, and Anxiety"],
+         "context": [""]
+        },
+        {"tag": "feeling",
+         "patterns": ["Not that great","I am stressed"," I’m sad","I am feeling depressed"],
+         "responses": ["I’m sorry to hear you’re not doing well today"],
+         "context": ["overthinking"]
+        },
+        {"tag": "overthinking",
+         "patterns": ["I think I am overthinking","I Overthink"],
+         "responses": ["What's going on? You can tell me"],
+         "context": ["overthinking-continue"]
+        },
+        {"tag": "overthinking-continue",
+         "patterns": ["I’m very confused in life" ],
+         "responses": ["Confusions are not bad.It leads to new path"],
+         "context": ["overthinking-continue1"]
+        },
+        {"tag": "overthinking-continue1",
+         "patterns": ["Tell me more about it" ],
+         "responses": ["Think about the pros and cons of the situation."],
+         "context": ["overthinking-continue2"]
+        },
+        {"tag": "overthinking-continue2",
+         "patterns": ["You are awesome" ],
+         "responses": ["That's very kind. Can I tell you a joke"],
+         "context": ["overthinking-continue3"]
+        },
+        {"tag": "overthinking-continue3",
+         "patterns": ["I'm all ears"],
+         "responses": ["You are so mean that your standard deviation is zero."],
+         "context": [""]
+        }
+    
+   ]
+}
